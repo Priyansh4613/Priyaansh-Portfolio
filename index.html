@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Priyansh Chaudhary | AI Marketing Strategist and Automation Engineer</title>
+  <meta name="description" content="Priyansh Chaudhary builds AI systems that run marketing: private GenAI at Bank of India’s head office, nine AI and automation workflows at Vyapar, and the deals that sell what they make.">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Priyansh Chaudhary | AI Marketing Strategist and Automation Engineer">
+  <meta property="og:description" content="Private GenAI inside a national bank. Nine AI workflows at one of India’s largest business apps. And the expo floor where it all gets sold.">
+  <meta property="og:image" content="/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#work">Skip to selected work</a>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-name"><span>Priyansh</span><span>Chaudhary</span></div>
+    <div class="loader-foot">
+      <span>Loading the work</span>
+      <span class="loader-count"><span id="loadCount">0</span>%</span>
+    </div>
+    <div class="loader-bar"><span id="loadBar"></span></div>
+  </div>
+
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor-dot"></span><span class="cursor-ring"><span class="cursor-label"></span></span></div>
+
+  <header class="nav">
+    <a href="#top" class="nav-mark" aria-label="Priyansh Chaudhary, back to top">Priyansh<span class="nav-dot">.</span></a>
+    <nav aria-label="Primary">
+      <a href="#work" data-scramble>Work</a>
+      <a href="#experience" data-scramble>Experience</a>
+      <a href="#skills" data-scramble>Skills</a>
+      <a href="#contact" data-scramble>Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <h1 class="hero-name" aria-label="Priyansh Chaudhary">
+        <span class="line l1" aria-hidden="true"><span class="word" data-split>Priyansh</span></span>
+        <span class="line l2" aria-hidden="true"><span class="word" data-split>Chaudhary</span></span>
+      </h1>
+      <figure class="hero-portrait" data-gl="1.35">
+        <img src="./src/assets/img/hero.webp" alt="Priyansh Chaudhary on a hilltop, looking out over a valley" width="1400" height="1663">
+      </figure>
+      <div class="hero-foot">
+        <p class="hero-role" data-hero-fade>AI marketing strategist<br>and automation engineer</p>
+        <p class="hero-lede" data-hero-fade>I build the AI systems that run marketing, then walk onto the expo floor and sell what they make.</p>
+        <div class="hero-meta" data-hero-fade>
+          <span>Mumbai, India</span>
+          <span><span id="clock">--:--</span> IST</span>
+        </div>
+      </div>
+      <a class="hero-scroll" href="#about" data-hero-fade>Scroll to explore</a>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro" id="about">
+      <p class="intro-text" data-words>Half engineer, half dealmaker. I wire LLMs, n8n and data pipelines into the work teams already do, and I negotiate in the rooms where that work gets sold. In 2026 that meant private GenAI inside a national bank, and nine AI workflows at one of India’s largest business apps.</p>
+      <div class="intro-side">
+        <figure class="intro-photo" data-gl="1">
+          <img src="./src/assets/img/ridge.webp" alt="Priyansh standing at a mountain lookout under a heavy sky" width="1400" height="1587" loading="lazy">
+        </figure>
+        <dl class="facts">
+          <div><dt>Now</dt><dd>AI Marketing Strategist, Vyapar</dd></div>
+          <div><dt>Before</dt><dd>Data Analyst and GenAI Intern, Bank of India</dd></div>
+          <div><dt>Studying</dt><dd>B.Tech Computer Science, VIT Bhopal, class of 2027</dd></div>
+          <div><dt>Based in</dt><dd>Mumbai and Bhopal</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- WORK RING -->
+    <section class="work" id="work" aria-labelledby="workTitle">
+      <div class="work-stage" id="workStage">
+        <div class="work-head">
+          <h2 class="work-title" id="workTitle">Selected work</h2>
+          <p class="work-count" aria-hidden="true"><span id="ringIndex">01</span><span class="work-count-total"> / 12</span></p>
+        </div>
+        <div class="work-active" aria-live="polite">
+          <p class="wa-org"><span class="wa-dot"></span><span id="waOrg"></span></p>
+          <h3 class="wa-title" id="waTitle"></h3>
+          <p class="wa-metric"><strong id="waValue"></strong><span id="waLabel"></span></p>
+          <button class="btn btn-solid" id="waOpen" type="button">Open project</button>
+        </div>
+        <div class="work-help">
+          <p>Scroll or drag to turn the ring.<br>Click a card to open it.</p>
+          <button class="btn" id="openList" type="button">See all projects as a list</button>
+        </div>
+        <div class="work-progress" aria-hidden="true"><span id="workBar"></span></div>
+        <div class="work-fallback" id="workFallback"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="exp" id="experience" aria-labelledby="expTitle">
+      <h2 class="section-title" id="expTitle">Experience</h2>
+
+      <article class="chapter chapter--boi" style="--accent: var(--boi)">
+        <div class="ch-org" aria-hidden="true"><div class="ch-org-track"><span>Bank of India</span><i></i><span>Bank of India</span><i></i><span>Bank of India</span><i></i></div></div>
+        <header class="ch-head">
+          <h3 class="ch-role">Data Analyst and GenAI Intern</h3>
+          <p class="ch-where">Bank of India, International Head Office, BKC Mumbai</p>
+          <p class="ch-when">May to June 2026</p>
+        </header>
+        <div class="ch-body">
+          <figure class="ch-photo" data-gl="1">
+            <img src="./src/assets/img/bank.webp" alt="Priyansh in the office with his Bank of India lanyard" width="1002" height="1500" loading="lazy">
+          </figure>
+          <div class="ch-text">
+            <p class="ch-lede">Inside the national headquarters, I worked directly with managers and general managers to put generative AI to work where the data can’t leave the building.</p>
+            <ul class="ch-list">
+              <li><strong>Architected AI automations with leadership,</strong> from the first discovery meeting with department heads to production.</li>
+              <li><strong>Shipped an ITSM SLA auditor</strong> that reads incident logs, checks them against the contract and prices vendor penalties.</li>
+              <li><strong>Led a data democratization project:</strong> SQL and n8n pipelines that turn raw backend data into executive dashboards, with zero manual entry.</li>
+              <li><strong>Deployed VaultGuard,</strong> passive biometric verification for 1,000+ employees.</li>
+              <li><strong>Kept every model on-premises:</strong> Ollama, Docker and Qdrant, with no public AI in the loop.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="arch" id="arch">
+          <div class="arch-head">
+            <h4 class="arch-title">Inside the SLA auditor</h4>
+            <p class="arch-sub">The real workflow, step by step. Agents marked in orange are local LLMs.</p>
+          </div>
+          <div class="arch-pipe" id="archPipe"></div>
+          <dl class="arch-stats">
+            <div><dt>Workflow nodes</dt><dd>29</dd></div>
+            <div><dt>AI agents</dt><dd>4</dd></div>
+            <div><dt>RAG tools over the SLA</dt><dd>2</dd></div>
+            <div><dt>Calls to public AI</dt><dd>0</dd></div>
+          </dl>
+          <p class="arch-stack">Runs on Llama 3.2 through Ollama, a Qdrant vector store and local embeddings, orchestrated in n8n.</p>
+        </div>
+      </article>
+
+      <article class="chapter chapter--vy" style="--accent: var(--vy)">
+        <div class="ch-org" aria-hidden="true"><div class="ch-org-track"><span>Vyapar</span><i></i><span>Vyapar</span><i></i><span>Vyapar</span><i></i><span>Vyapar</span><i></i></div></div>
+        <header class="ch-head">
+          <h3 class="ch-role">AI Marketing Strategist</h3>
+          <p class="ch-where">Vyapar (Simply Vyapar Apps Pvt. Ltd.)</p>
+          <p class="ch-when">June 2026 to now</p>
+        </header>
+        <div class="ch-body">
+          <figure class="ch-photo" data-gl="1">
+            <img src="./src/assets/img/airport.webp" alt="Priyansh at the airport, en route to represent Vyapar at an expo" width="1145" height="1600" loading="lazy">
+          </figure>
+          <div class="ch-text">
+            <p class="ch-lede">Vyapar is India’s GST billing and accounting app, trusted by 1.5 crore+ businesses. I joined in performance marketing and turned the seat into an AI-first growth role across six functions, reporting to directors.</p>
+            <ul class="ch-list">
+              <li><strong>Led growth across performance marketing and ASO,</strong> lifting month-zero ROI from 55% to 79%.</li>
+              <li><strong>Engineered the creative pipeline:</strong> AI static and video engines, and a Meta Ads autopilot that takes winners from a folder to live ads.</li>
+              <li><strong>Automated cross-functional work</strong> with the SEO, data and analytics teams, from campaign reports to self-refreshing web pages.</li>
+              <li><strong>Took Vyapar to the expo floor,</strong> negotiating venue deals and capturing 300 leads at a single show.</li>
+            </ul>
+          </div>
+        </div>
+        <ol class="functions" aria-label="Six functions at Vyapar">
+          <li><span class="fn-v">79%</span><span class="fn-t">Performance marketing</span><span class="fn-d">M0 ROI, up from 55%. Overall ROI 150%+.</span></li>
+          <li><span class="fn-v">10</span><span class="fn-t">AI creative engines</span><span class="fn-d">On-brand ads from a single brief, static and video.</span></li>
+          <li><span class="fn-v">0</span><span class="fn-t">Ads automation</span><span class="fn-d">Manual uploads. Slack reports and breakout alerts.</span></li>
+          <li><span class="fn-v">5</span><span class="fn-t">SEO refresh engine</span><span class="fn-d">Linked workflows that catch and rewrite falling pages.</span></li>
+          <li><span class="fn-v">2</span><span class="fn-t">App Store Optimization</span><span class="fn-d">Markets on both stores: India and the Middle East.</span></li>
+          <li><span class="fn-v">6</span><span class="fn-t">Events and partnerships</span><span class="fn-d">Expo cities, venue deals and shop-in-shop talks.</span></li>
+        </ol>
+      </article>
+    </section>
+
+    <!-- NUMBERS -->
+    <section class="numbers" aria-labelledby="numTitle">
+      <div class="numbers-stage">
+        <h2 class="section-title" id="numTitle">By the numbers</h2>
+        <div class="numbers-track" id="numbersTrack">
+          <div class="num"><span class="num-v">79%</span><span class="num-l">month-zero ROI on Meta and Google, up from 55%</span></div>
+          <div class="num"><span class="num-v">150%+</span><span class="num-l">overall ROI across scaled campaigns</span></div>
+          <div class="num"><span class="num-v">9</span><span class="num-l">AI and automation workflows shipped in four months</span></div>
+          <div class="num"><span class="num-v">1,000+</span><span class="num-l">employees on VaultGuard biometric verification</span></div>
+          <div class="num"><span class="num-v">₹11L+</span><span class="num-l">sponsorship closed for Advitya 2025</span></div>
+          <div class="num"><span class="num-v">300</span><span class="num-l">leads captured at a single expo</span></div>
+          <div class="num"><span class="num-v">15M+</span><span class="num-l">views across 10+ Instagram accounts</span></div>
+          <div class="num"><span class="num-v">₹3L+</span><span class="num-l">revenue from a self-funded D2C brand</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="caps" id="skills" aria-labelledby="capsTitle">
+      <h2 class="caps-title display" id="capsTitle"><span>I build the system.</span><span>I sell the outcome.</span></h2>
+      <div class="caps-split">
+        <div class="cap-side" tabindex="0">
+          <h3 class="cap-h">Systems</h3>
+          <p class="cap-sub">The technical side: what I build with.</p>
+          <div class="cap-groups">
+            <div><h4>Automation and AI</h4><p>n8n, REST APIs and webhooks, Docker, LLM APIs (Claude, Gemini, Ollama), RAG, prompt engineering, Magnific Spaces</p></div>
+            <div><h4>Code and data</h4><p>Python, SQL, JavaScript, Java, HTML and CSS, ETL and pipeline design, AWS QuickSight dashboards, Advanced Excel</p></div>
+            <div><h4>Platforms</h4><p>AWS (S3, IAM), Meta Graph API, Search Console API, WordPress, Slack, Google Workspace automation</p></div>
+          </div>
+        </div>
+        <div class="cap-side cap-side--growth" tabindex="0">
+          <h3 class="cap-h">Growth</h3>
+          <p class="cap-sub">The non-technical side: how the work earns.</p>
+          <div class="cap-groups">
+            <div><h4>Performance marketing</h4><p>Meta Ads, Google Ads, creative testing, budget scaling, audience targeting, paid social</p></div>
+            <div><h4>Search and stores</h4><p>SEO, App Store Optimization, keyword research, screenshot A/B tests, content strategy</p></div>
+            <div><h4>Deals and people</h4><p>Negotiation, sponsorship sales, stakeholder management, event execution, vendor sourcing, partnerships</p></div>
+            <div><h4>Operations</h4><p>Process mapping, requirements gathering, SLA design, supply chain, D2C brand building</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEYOND -->
+    <section class="beyond" aria-labelledby="beyondTitle">
+      <h2 class="section-title" id="beyondTitle">Off the keyboard</h2>
+      <div class="beyond-grid">
+        <figure class="beyond-photo" data-gl="1">
+          <img src="./src/assets/img/stage.webp" alt="Priyansh speaking into a microphone to a seated audience" width="1500" height="1600" loading="lazy">
+        </figure>
+        <ul class="beyond-list">
+          <li>
+            <p class="b-v">₹11L+</p>
+            <h3>Advitya 2025, sponsorship assistant lead</h3>
+            <p>Pitched and closed sponsorship from Chartered Speed and Realme India, the largest single contribution to the fest. Cold outreach to contract to live brand activation on the floor.</p>
+          </li>
+          <li>
+            <p class="b-v">500+</p>
+            <h3>GDG VIT Bhopal, design lead then president</h3>
+            <p>Design Lead in 2024, Non-Technical President in 2025. Ran PR, outreach and events for 500+ participants, including the Google Olympics.</p>
+          </li>
+          <li>
+            <p class="b-v">15</p>
+            <h3>AI Club VIT Bhopal, graphics lead</h3>
+            <p>Led a 15-member video and design team delivering branding and event communications on deadline.</p>
+          </li>
+          <li>
+            <p class="b-v">15M+</p>
+            <h3>Freelance digital consultant</h3>
+            <p>Earned ₹50K+ in three months editing for international clients, and grew 10+ Instagram accounts to 15M+ combined views with Meta Ads and organic strategy.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contactTitle">
+      <figure class="contact-photo" data-gl="0.8">
+        <img src="./src/assets/img/horizon.webp" alt="Priyansh from behind, looking out over a city in the hills" width="1400" height="1680" loading="lazy">
+      </figure>
+      <div class="contact-body">
+        <h2 class="contact-title display" id="contactTitle"><span>Let’s build</span><span>the next one</span></h2>
+        <p class="contact-sub">Open to conversations about AI, automation and growth roles.</p>
+        <div class="contact-links">
+          <a class="contact-mail" href="mailto:priyanshchaudhary4613@gmail.com">priyanshchaudhary4613@gmail.com</a>
+          <button class="btn" type="button" id="copyMail">Copy email</button>
+        </div>
+        <div class="contact-row">
+          <a class="btn btn-solid" href="https://www.linkedin.com/in/priyansh-chaudhary-937777283" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" id="resumeLink" href="./src/assets/Priyansh_Chaudhary_Resume.pdf" download="Priyansh_Chaudhary_Resume.pdf">Download résumé</a>
+        </div>
+      </div>
+      <footer class="foot">
+        <span>© 2026 Priyansh Chaudhary</span>
+        <span>Mumbai, India</span>
+        <a href="#top">Back to top</a>
+      </footer>
+    </section>
+  </main>
+
+  <!-- PROJECT DETAIL -->
+  <div class="detail" id="detail" role="dialog" aria-modal="true" aria-labelledby="dTitle" hidden data-lenis-prevent>
+    <div class="d-bar">
+      <p class="d-crumb" data-d><span class="d-dot"></span><span id="dOrg"></span><span class="d-year" id="dYear"></span></p>
+      <button class="btn" type="button" id="dClose">Close</button>
+    </div>
+    <div class="d-grid">
+      <div class="d-main">
+        <p class="d-kicker" id="dKicker" data-d></p>
+        <h2 class="d-title display" id="dTitle" data-d></h2>
+        <p class="d-summary" id="dSummary" data-d></p>
+        <dl class="d-stats" id="dStats" data-d></dl>
+        <div class="d-section" data-d>
+          <h3>What it does</h3>
+          <ul class="d-points" id="dPoints"></ul>
+        </div>
+        <div class="d-section" data-d id="dPipeWrap">
+          <h3>How it flows</h3>
+          <div id="dPipe"></div>
+        </div>
+        <div class="d-section" data-d>
+          <h3>Built with</h3>
+          <ul class="d-stack" id="dStack"></ul>
+          <p class="d-note" id="dNote"></p>
+        </div>
+        <nav class="d-nav" data-d aria-label="Project navigation">
+          <button class="btn" type="button" id="dPrev">Previous project</button>
+          <button class="btn btn-solid" type="button" id="dNext">Next project</button>
+        </nav>
+      </div>
+      <div class="d-aside">
+        <div class="d-visual" id="dVisual"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT LIST -->
+  <div class="plist" id="plist" role="dialog" aria-modal="true" aria-labelledby="plTitle" hidden data-lenis-prevent>
+    <div class="d-bar">
+      <h2 class="pl-title" id="plTitle">All projects</h2>
+      <button class="btn" type="button" id="plClose">Close</button>
+    </div>
+    <ul class="pl-rows" id="plRows"></ul>
+    <div class="pl-peek" id="plPeek" aria-hidden="true"></div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

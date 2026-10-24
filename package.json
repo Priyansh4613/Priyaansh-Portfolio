@@ -1,0 +1,25 @@
+{
+  "name": "priyansh-portfolio",
+  "version": "1.0.0",
+  "description": "Priyansh Chaudhary — 3D portfolio",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:single": "vite build --mode single",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "gsap": "3.12.5",
+    "lenis": "1.1.13",
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "vite": "5.4.10",
+    "vite-plugin-singlefile": "2.0.3"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  }
+}
